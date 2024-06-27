@@ -10,19 +10,19 @@ interface NewsCardProps {
 function NewsCard(props: NewsCardProps) {
   //   console.log(props.newsItem)
   return (
-    <div className='newsCard'>
+    <div className="newsCard">
       <img
         alt={props.newsItem.title}
         src={props.newsItem.urlToImage ? props.newsItem.urlToImage : ""}
-        className='newsImage'
+        className="newsImage"
       />
-      <div className='newsText'>
+      <div className="newsText">
         <div>
-          <span className='title'>{props.newsItem.title}</span>
+          <span className="title">{props.newsItem.title}</span>
         </div>
-        <div className='lowerNewsText'>
-          <div className='description'>{props.newsItem.content}</div>
-          <span className='readmore'>
+        <div className="lowerNewsText">
+          <div className="description">{props.newsItem.content}</div>
+          <span className="readmore">
             Read More at
             <a href={props.newsItem.url} target='_blank'>
               <b>Link</b>
