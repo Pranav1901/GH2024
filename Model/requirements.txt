@@ -1,0 +1,6 @@
+langchain
+langchain-groq
+huggingface_hub
+requests
+fastapi
+groq
