@@ -1,0 +1,499 @@
+{
+    "articles": [
+        {
+            "id": "24767206",
+            "url": "https://politicalwire.com/2024/05/28/jury-to-begin-deliberations-in-trump-trial/",
+            "shorts": "The article reports on the upcoming jury deliberations in the trial of former President Donald Trump. The trial has been ongoing for several weeks, and the jury is expected to begin deliberating on a verdict soon. The article provides an update on the current status of the trial and what to expect in the coming days.",
+            "quiz": [
+                {
+                    "questionNumber": "1",
+                    "question": "What is the current status of the trial of former President Donald Trump?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "The trial has just begun"
+                        },
+                        {
+                            "key": "2",
+                            "value": "The trial is ongoing and the jury is about to begin deliberations"
+                        },
+                        {
+                            "key": "3",
+                            "value": "The trial has ended and a verdict has been reached"
+                        },
+                        {
+                            "key": "4",
+                            "value": "The trial has been postponed indefinitely"
+                        }
+                    ],
+                    "correctAnswer": "2"
+                },
+                {
+                    "questionNumber": "2",
+                    "question": "How long has the trial been ongoing?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "A few days"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Several weeks"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Several months"
+                        },
+                        {
+                            "key": "4",
+                            "value": "Over a year"
+                        }
+                    ],
+                    "correctAnswer": "2"
+                },
+                {
+                    "questionNumber": "3",
+                    "question": "What is the next step in the trial process?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "The prosecution will present more evidence"
+                        },
+                        {
+                            "key": "2",
+                            "value": "The defense will present its case"
+                        },
+                        {
+                            "key": "3",
+                            "value": "The jury will begin deliberating on a verdict"
+                        },
+                        {
+                            "key": "4",
+                            "value": "The judge will deliver a verdict"
+                        }
+                    ],
+                    "correctAnswer": "3"
+                },
+                {
+                    "questionNumber": "4",
+                    "question": "What is the role of the jury in the trial?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "To present evidence"
+                        },
+                        {
+                            "key": "2",
+                            "value": "To argue the case"
+                        },
+                        {
+                            "key": "3",
+                            "value": "To decide on a verdict"
+                        },
+                        {
+                            "key": "4",
+                            "value": "To advise the judge"
+                        }
+                    ],
+                    "correctAnswer": "3"
+                }
+            ]
+        },
+        {
+            "id": "224839780",
+            "url": "https://medium.com/gitconnected/api-design-101-from-basics-to-best-practices-a0261cdf8886",
+            "shorts": "API design is a crucial aspect of software development that involves creating a set of defined rules and protocols for building software applications. It enables different systems to communicate with each other seamlessly, facilitating data exchange and functionality integration. A well-designed API can improve the overall user experience, increase efficiency, and reduce development time.",
+            "quiz": [
+                {
+                    "questionNumber": "1",
+                    "question": "What is the primary purpose of API design?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "To improve user experience"
+                        },
+                        {
+                            "key": "2",
+                            "value": "To facilitate data exchange and functionality integration"
+                        },
+                        {
+                            "key": "3",
+                            "value": "To reduce development time"
+                        },
+                        {
+                            "key": "4",
+                            "value": "All of the above"
+                        }
+                    ],
+                    "correctAnswer": "4"
+                },
+                {
+                    "questionNumber": "2",
+                    "question": "What is the result of a well-designed API?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "Increased development time"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Poor user experience"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Improved efficiency and reduced development time"
+                        },
+                        {
+                            "key": "4",
+                            "value": "None of the above"
+                        }
+                    ],
+                    "correctAnswer": "3"
+                },
+                {
+                    "questionNumber": "3",
+                    "question": "What enables different systems to communicate with each other seamlessly?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "API design"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Software development"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Data exchange"
+                        },
+                        {
+                            "key": "4",
+                            "value": "Functionality integration"
+                        }
+                    ],
+                    "correctAnswer": "1"
+                },
+                {
+                    "questionNumber": "4",
+                    "question": "What is API design involved in?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "Creating a set of defined rules and protocols"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Building software applications"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Improving user experience"
+                        },
+                        {
+                            "key": "4",
+                            "value": "Reducing development time"
+                        }
+                    ],
+                    "correctAnswer": "1"
+                }
+            ]
+        },
+        {
+            "id": "224936214",
+            "url": "https://medium.com/@theriyasharma24/create-mock-apis-using-json-server-for-seamless-development-4a6ba03ef148",
+            "shorts": "The article discusses the importance of creating mock APIs for seamless development. It highlights the benefits of using JSON Server to create mock APIs, including rapid development, easy testing, and reduced dependencies. The article provides a step-by-step guide on how to create a mock API using JSON Server, including installing JSON Server, creating a database, and defining API endpoints.",
+            "quiz": [
+                {
+                    "questionNumber": "1",
+                    "question": "What is the main benefit of creating mock APIs for development?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "To reduce dependencies"
+                        },
+                        {
+                            "key": "2",
+                            "value": "To increase development time"
+                        },
+                        {
+                            "key": "3",
+                            "value": "To improve testing efficiency"
+                        },
+                        {
+                            "key": "4",
+                            "value": "To enhance user experience"
+                        }
+                    ],
+                    "correctAnswer": "3"
+                },
+                {
+                    "questionNumber": "2",
+                    "question": "What tool is used to create mock APIs in the article?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "JSON Server"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Postman"
+                        },
+                        {
+                            "key": "3",
+                            "value": "API Gateway"
+                        },
+                        {
+                            "key": "4",
+                            "value": "Mocky"
+                        }
+                    ],
+                    "correctAnswer": "1"
+                },
+                {
+                    "questionNumber": "3",
+                    "question": "What is the first step in creating a mock API using JSON Server?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "Defining API endpoints"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Creating a database"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Installing JSON Server"
+                        },
+                        {
+                            "key": "4",
+                            "value": "Testing the API"
+                        }
+                    ],
+                    "correctAnswer": "3"
+                },
+                {
+                    "questionNumber": "4",
+                    "question": "What is the purpose of creating a database in JSON Server?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "To store API requests"
+                        },
+                        {
+                            "key": "2",
+                            "value": "To store API responses"
+                        },
+                        {
+                            "key": "3",
+                            "value": "To store data for the mock API"
+                        },
+                        {
+                            "key": "4",
+                            "value": "To store user information"
+                        }
+                    ],
+                    "correctAnswer": "3"
+                }
+            ]
+        },
+        {
+            "id": "224956968",
+            "url": "https://flexiple.com/angular/deep-dive",
+            "shorts": "The article provides a deep dive into Angular, a popular JavaScript framework for building web applications. It covers the history of Angular, its architecture, and the benefits of using it for development. The article also explains the concept of components, templates, and services in Angular, as well as the role of dependency injection and the Angular CLI.",
+            "quiz": [
+                {
+                    "questionNumber": "1",
+                    "question": "What is Angular?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "A JavaScript library for building web applications"
+                        },
+                        {
+                            "key": "2",
+                            "value": "A framework for building mobile applications"
+                        },
+                        {
+                            "key": "3",
+                            "value": "A tool for building desktop applications"
+                        },
+                        {
+                            "key": "4",
+                            "value": "A programming language for building web applications"
+                        }
+                    ],
+                    "correctAnswer": "1"
+                },
+                {
+                    "questionNumber": "2",
+                    "question": "What is the main benefit of using Angular for development?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "Faster development time"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Easier maintenance"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Improved performance"
+                        },
+                        {
+                            "key": "4",
+                            "value": "All of the above"
+                        }
+                    ],
+                    "correctAnswer": "4"
+                },
+                {
+                    "questionNumber": "3",
+                    "question": "What is a component in Angular?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "A reusable piece of code"
+                        },
+                        {
+                            "key": "2",
+                            "value": "A template for building UI components"
+                        },
+                        {
+                            "key": "3",
+                            "value": "A service for providing data to components"
+                        },
+                        {
+                            "key": "4",
+                            "value": "A module for organizing components"
+                        }
+                    ],
+                    "correctAnswer": "2"
+                },
+                {
+                    "questionNumber": "4",
+                    "question": "What is the role of dependency injection in Angular?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "To provide a way to organize components"
+                        },
+                        {
+                            "key": "2",
+                            "value": "To provide a way to inject services into components"
+                        },
+                        {
+                            "key": "3",
+                            "value": "To provide a way to build templates"
+                        },
+                        {
+                            "key": "4",
+                            "value": "To provide a way to build modules"
+                        }
+                    ],
+                    "correctAnswer": "2"
+                }
+            ]
+        },
+        {
+            "id": "224957034",
+            "url": "https://medium.com/@aishwarymuz/all-about-apache-kafka-a6e49f10130",
+            "shorts": "Apache Kafka is a distributed streaming platform that enables high-throughput and provides low-latency, fault-tolerant, and scalable data processing. It is designed to handle high volumes of data and provides a unified platform for handling real-time data feeds.",
+            "quiz": [
+                {
+                    "questionNumber": "1",
+                    "question": "What is Apache Kafka?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "A distributed database management system"
+                        },
+                        {
+                            "key": "2",
+                            "value": "A distributed streaming platform"
+                        },
+                        {
+                            "key": "3",
+                            "value": "A data warehousing tool"
+                        },
+                        {
+                            "key": "4",
+                            "value": "A machine learning framework"
+                        }
+                    ],
+                    "correctAnswer": "2"
+                },
+                {
+                    "questionNumber": "2",
+                    "question": "What are the key features of Apache Kafka?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "High-throughput, low-latency, and fault-tolerant"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Scalability, security, and data warehousing"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Real-time data processing, machine learning, and data visualization"
+                        },
+                        {
+                            "key": "4",
+                            "value": "Data integration, data governance, and data quality"
+                        }
+                    ],
+                    "correctAnswer": "1"
+                },
+                {
+                    "questionNumber": "3",
+                    "question": "What is the primary use case of Apache Kafka?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "Handling high volumes of data"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Building data warehouses"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Developing machine learning models"
+                        },
+                        {
+                            "key": "4",
+                            "value": "Creating data visualizations"
+                        }
+                    ],
+                    "correctAnswer": "1"
+                },
+                {
+                    "questionNumber": "4",
+                    "question": "What is the advantage of using Apache Kafka?",
+                    "options": [
+                        {
+                            "key": "1",
+                            "value": "It provides a unified platform for handling real-time data feeds"
+                        },
+                        {
+                            "key": "2",
+                            "value": "It is a cost-effective solution for data processing"
+                        },
+                        {
+                            "key": "3",
+                            "value": "It provides high-security features for data protection"
+                        },
+                        {
+                            "key": "4",
+                            "value": "It is a user-friendly platform for data analysis"
+                        }
+                    ],
+                    "correctAnswer": "1"
+                }
+            ]
+        }
+    ]
+}
