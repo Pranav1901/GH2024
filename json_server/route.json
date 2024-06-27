@@ -1,0 +1,7 @@
+{
+    "/api/getqanda/:shortid": {
+        "GET": {
+            "action": "db.articles.find(data => data.id == :shortid)"
+        }
+    }
+}
