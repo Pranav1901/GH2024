@@ -1,8 +1,7 @@
 from flask import Flask, request, abort, jsonify, render_template
 from flask_restful import Api, Resource, reqparse
 import requests
-from flask_cors import CORS, cross_origin
-
+from flask_cors import CORS
 
 app = Flask(__name__)
 cors = CORS(app, resource={
@@ -29,6 +28,27 @@ shorts = {}
 NEWS_API_KEY = '990ebb54198a49c0923eb18c9a9d2cdb' 
 NEWS_API_URL = 'https://newsapi.org/v2/top-headlines'
 
+
+def fetch_all_news():
+    url = "https://api.worldnewsapi.com/top-news?source-country=us&language=en&date=2024-05-29"
+    api_key = "a74722d2d47f461e9d8e543ab559aa59"
+
+    headers = {
+        'x-api-key': api_key
+    }
+
+    response = requests.get(url, headers=headers)
+
+    if response.status_code == 200:
+        top_news = response.json().get('top_news', [])
+        all_news_data = top_news[0].get('news', [])
+        # news = all_news_data[0].get('articles', [])
+        result = [{'title': article['title'], 'content': article['text'], 'url': article['url'], 'urlToImage': article['image']} for article in all_news_data if article.get('text')][:5]
+        return result
+    else:
+        return f"Error: {response.status_code}"
+
+
 def fetch_news():
     params = {
         'apiKey': NEWS_API_KEY,
@@ -36,10 +56,9 @@ def fetch_news():
         'category': 'technology'  
     }
     response = requests.get(NEWS_API_URL, params=params)
-    
     if response.status_code == 200:
         news_data = response.json().get('articles', [])
-        result = [{'title': article['title'], 'content': article.get('content', 'No content available'), 'url': article['url'], 'urlToImage': article['urlToImage']} for article in news_data if article.get('content')][:5]
+        result = [{'title': article['title'], 'content': article.get('content', 'No content available'), 'url': article['url']} for article in news_data if article.get('content')][:5]
         return result
     else:
         abort(response.status_code, message="Failed to fetch news")
@@ -69,10 +88,16 @@ class Shorts(Resource):
         return '', 204
     
  
+# class News(Resource):
+#     def get(self):
+#         news_data = fetch_news()
+#         return news_data
+    
+
 class News(Resource):
     def get(self):
-        news_data = fetch_news()
-        return news_data
+        all_news_data = fetch_all_news()
+        return all_news_data
     
 
 api.add_resource(Shorts, "/shorts/<int:short_id>")
