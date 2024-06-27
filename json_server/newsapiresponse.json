@@ -1,0 +1,34 @@
+{
+    "articles" : [
+    {
+        "id": 224767206,
+        "title": "Jury to Begin Deliberations In Trump Trial",
+        "url": "https://politicalwire.com/2024/05/28/jury-to-begin-deliberations-in-trump-trial/",
+        "urlToImage": "https://politicalwire.com/wp-content/uploads/2018/02/PW-podcast-logo.jpg"
+    },
+    {
+        "id": 224839780,
+        "title": "API Design 101: From Basics to Best Practices",
+        "url": "https://medium.com/gitconnected/api-design-101-from-basics-to-best-practices-a0261cdf8886",
+        "urlToImage": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vWvkkgG6uvgmJT8GkId98A.png"
+    },
+    {
+        "id": 224936214,
+        "title": "Mock APIs Using JSON Server",
+        "url": "https://medium.com/@theriyasharma24/create-mock-apis-using-json-server-for-seamless-development-4a6ba03ef148",
+        "urlToImage": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*VfCpbogDm3UXAhzZDKyJ7Q.png"
+    },
+    {
+        "id": 224956968,
+        "title": "All About Angular",
+        "url": "https://flexiple.com/angular/deep-dive",
+        "urlToImage": "https://ik.imagekit.io/6eslefmcf/flexiple-blog/Angular/angulardd1_sj9KZgawk.png"
+    },
+    {
+        "id": 224957034,
+        "title": "All About Apache Kafka",
+        "url": "https://medium.com/@aishwarymuz/all-about-apache-kafka-a6e49f10130",
+        "urlToImage": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*OstRGnyPUZ_0WzYQB0mI4w.png"
+    }
+]
+}
