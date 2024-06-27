@@ -11,11 +11,24 @@ cors = CORS(app, resource={
 })
 api = Api(app)
 
+def fetch_summaries():
+    response = requests.get("http://localhost:8000/articles")
+    if response.status_code ==200:
+        summaries = response.json()
+        result = [{'id': summary['id'], 'summary': summary['shorts'] } for summary in summaries][:5]
+        return result
+    else:
+        return f"Error: {response.status_code}"      
+
 
 def fetch_all_news():
     response = requests.get("http://localhost:8001/articles");
     if response.status_code == 200:
-        return response.json()
+        newsarticles = response.json()
+        summaries_dict = fetch_summaries()
+        result = [{'id': article['id'], 'title': article['title'], 'content': summaries_dict, 'url': article['url'], 'urlToImage': article['urlToImage']} for article in newsarticles][:5]
+
+        return result
     else:
         return f"Error: {response.status_code}"
 
