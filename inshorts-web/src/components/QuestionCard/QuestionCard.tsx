@@ -10,11 +10,11 @@ import Radio from "@mui/material/Radio";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 
-export default function QuestionCard(props) {
+export default function QuestionCard(props: any) {
   const { question = {}, questionNumber, submitAnswer } = props;
   const [value, setValue] = React.useState(null);
 
-  const handleChangeRadio = (e) => {
+  const handleChangeRadio = (e: any) => {
     setValue(e.target.value);
   };
 
@@ -41,7 +41,7 @@ export default function QuestionCard(props) {
               value={value}
               onChange={handleChangeRadio}
             >
-              {question.options.map((o, i) => {
+              {question.options.map((o: any, i: any) => {
                 return (
                   <FormControlLabel
                     key={i + 1}

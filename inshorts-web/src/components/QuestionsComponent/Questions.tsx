@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { CssBaseline, Box, Container } from "@mui/material";
 import { lightBlue } from "@mui/material/colors";
+import questions from "../../data/questions";
+import QuestionCard from "../QuestionCard/QuestionCard";
 
-import QuestionCard from "./QuestionCard";
-import Result from "./Result";
-import questions from "./data/questions";
 
 function Question() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -16,8 +15,8 @@ function Question() {
     setCurrentQuestionIndex((prevState) => prevState + 1);
   };
 
-  const submitAnswer = (value) => {
-    setAnswers((prevState) => [...prevState, value]);
+  const submitAnswer = (value: any) => {
+    // setAnswers((prevState) => [...prevState, value]);
     goToNext();
   };
 
@@ -38,15 +37,13 @@ function Question() {
         }}
       >
         <Container maxWidth="sm">
-          {finishedQuiz ? (
-            <Result restartQuiz={restartQuiz} answers={answers} />
-          ) : (
+     
             <QuestionCard
               question={currentQuestion}
               questionNumber={currentQuestionIndex + 1}
               submitAnswer={submitAnswer}
             />
-          )}
+          
         </Container>
       </Box>
     </div>
