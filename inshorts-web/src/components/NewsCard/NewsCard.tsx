@@ -25,8 +25,7 @@ function NewsCard(props: NewsCardProps) {
           <span className='readmore'>
             Read More at
             <a href={props.newsItem.url} target='_blank'>
-              {/* <b>{props.newsItem.source.name}</b> */}
-              <b> Link</b>
+              <b>Link</b>
             </a>
           </span>
         </div>
