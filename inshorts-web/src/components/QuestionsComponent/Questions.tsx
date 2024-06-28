@@ -1,53 +1,42 @@
 import { useState } from "react";
-import { CssBaseline, Box, Container } from "@mui/material";
-import { lightBlue } from "@mui/material/colors";
-import questions from "../../data/questions";
 import QuestionCard from "../QuestionCard/QuestionCard";
+import { QNA, QuestionProps, Answer } from "../../utils/types";
+import Results from "../QuizResult/Results";
+import { Button } from "@mui/material";
+
+const selectedOptions: Answer[] = [];
+
+function Questions(props: QuestionProps) {
+  const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const submit = () => {
+    // Update the isSubmitted Status
+    setIsSubmitted(true)
+  }
+
+  const handleOptionSelection = (questionId: number, value: number) => {
+    console.log(`Question : ${questionId} and answer : ${value}`);
+    const index = questionId-1;
+    if(typeof selectedAnswers[index] === 'undefined') {
+      selectedAnswers.splice(index, 0, value);
+    } else {
+      selectedAnswers.splice(index, 1, value);
+    }
+  }
 
 
-function Question() {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [answers, setAnswers] = useState([]);
-  const finishedQuiz = currentQuestionIndex === questions.length;
-  const currentQuestion = questions[currentQuestionIndex];
+  const renderContent = props.questions.map((q: QNA) => {
+    return <QuestionCard key={q.questionNumber} questionSet={q} handleOptionSelection={(questionId: number, value: number) => handleOptionSelection(questionId, value)} />;
+  });
 
-  const goToNext = () => {
-    setCurrentQuestionIndex((prevState) => prevState + 1);
-  };
-
-  const submitAnswer = (value: any) => {
-    // setAnswers((prevState) => [...prevState, value]);
-    goToNext();
-  };
-
-  const restartQuiz = () => {
-    setCurrentQuestionIndex(0);
-    setAnswers([]);
-  };
 
   return (
-    <div>
-      <CssBaseline />
-      <Box
-        sx={{
-          backgroundColor: lightBlue[500],
-          height: "100vh",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Container maxWidth="sm">
-     
-            <QuestionCard
-              question={currentQuestion}
-              questionNumber={currentQuestionIndex + 1}
-              submitAnswer={submitAnswer}
-            />
-          
-        </Container>
-      </Box>
-    </div>
-  );
+    isSubmitted ? <Results answers={selectedAnswers} /> : <div>{renderContent}<><Button variant="outlined" onClick={() => {
+      submit();
+    }}>Submit</Button></></div>
+  )
+
 }
 
-export default Question;
+export default Questions;

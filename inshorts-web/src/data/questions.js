@@ -1,54 +1,69 @@
 const questions = [
     {
-        title: "What's the national flower of Japan?",
+        questionNumber: 1,
+        question: "What's the national flower of Japan?",
         options: [
             {
-                description: "Cherry Blossom",
+                key: 1,
+                value: "Cherry Blossom",
             },
             {
-                description: "Rose",
+                key: 2,
+                value: "Rose",
             },
             {
-                description: "Jasmine",
+                key: 3,
+                value: "Jasmine",
             },
             {
-                description: "Lavender",
+                key: 4,
+                value: "Lavender",
             }
         ],
         correctAnswer: 1
     },
     {
-        title: "What's the national animal of Australia?",
+        questionNumber: 2,
+        question: "What's the national animal of Australia?",
         options: [
             {
-                description: "Lion"
+                key: 1,
+                value: "Lion"
             },
             {
-                description: "Cat"
+                key: 2,
+                value: "Cat"
             },
             {
-                description: "Red Kangaroo"
+                key: 3,
+                value: "Red Kangaroo"
             },
             {
-                description: "Elephant"
+                key: 4,
+                value: "Elephant"
             }
         ],
         correctAnswer: 3
     },
     {
-        title: "Which of the following is used in pencils",
+        questionNumber: 3,
+        question: "Which of the following is used in pencils",
         options: [
             {
-                description: "Phosphorous"
+                key: 1,
+                value: "Phosphorous"
             },
             {
-                description: "Silicon"
+                key: 2,
+                value: "Silicon"
             },
             {
-                description: "Charcoal"
+                key: 3,
+                value: "Charcoal"
             },
             {
-                description: "Graphite"
+                key: 4,
+                value: "Graphite"
             }
         ],
         correctAnswer: 4
