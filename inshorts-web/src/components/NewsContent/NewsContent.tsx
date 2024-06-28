@@ -1,7 +1,7 @@
-import React from "react";
 import Container from "@mui/material/Container";
 import "./NewsContent.css";
 import NewsCard from "../NewsCard/NewsCard";
+
 
 interface NewsContentProps {
   newsArray: any[];
@@ -16,6 +16,7 @@ function NewsContent(props: NewsContentProps) {
           <NewsCard newsItem={newsItem} key={newsItem.title} />
         ))}
       </div>
+     
     </Container>
   );
 }
