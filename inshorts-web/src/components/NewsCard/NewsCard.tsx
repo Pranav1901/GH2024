@@ -1,9 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import axios from "axios";
+import { useState } from "react";
 import "./NewsCard.css";
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from "@mui/material";
 import Questions from "../QuestionsComponent/Questions";
-import questions from "../../data/questions";
 import { QNA } from "../../utils/types";
 
 interface NewsCardProps {
@@ -13,15 +13,29 @@ interface NewsCardProps {
 
 function NewsCard(props: NewsCardProps) {
   const [value, setValue] = React.useState('false');
-  const [objectsArray, setObjectsArray] = useState<QNA[]>(questions);
-
+  const [objectsArray, setObjectsArray] = useState<QNA[]>([]);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const eventValue = (((event.target as HTMLInputElement).value));
-    setValue(eventValue);
+    if(eventValue === 'true') {
+      getQuizApi().then(()=> {
+        setValue(eventValue);
+      })
+    } else {
+      setValue(eventValue);
+    }
   };
 
-  //   console.log(props.newsItem)
+  const getQuizApi = async () => {
+    try {
+      const response = await axios.get(`http://localhost:8000/articles/${props.newsItem.id}`);
+      console.log("quiz :: " + JSON.stringify(response));
+      setObjectsArray(response.data.quiz)
+    } catch (error) {
+      console.log("error" + error);
+    }
+  };
+
   return (
     <div className="newsCard">
       <img
@@ -56,7 +70,6 @@ function NewsCard(props: NewsCardProps) {
                   <FormControlLabel value="false" control={<Radio />} label="No" />
                 </RadioGroup>
               </FormControl>
-
               {value === 'true' ? <div><Questions questions={objectsArray} /></div> : null}
             </span>
             : ''

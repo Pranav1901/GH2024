@@ -4,15 +4,18 @@ import { QNA, QuestionProps, Answer } from "../../utils/types";
 import Results from "../QuizResult/Results";
 import { Button } from "@mui/material";
 
-const selectedOptions: Answer[] = [];
-
 function Questions(props: QuestionProps) {
   const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
 
   const submit = () => {
+    const correctAnswers = props.questions.filter((q, i) => {
+      return q.correctAnswer == (selectedAnswers[i]);
+    }).length;
+    setCorrectAnswers(correctAnswers);
     // Update the isSubmitted Status
-    setIsSubmitted(true)
+    setIsSubmitted(true);
   }
 
   const handleOptionSelection = (questionId: number, value: number) => {
@@ -32,7 +35,7 @@ function Questions(props: QuestionProps) {
 
 
   return (
-    isSubmitted ? <Results answers={selectedAnswers} /> : <div>{renderContent}<><Button variant="outlined" onClick={() => {
+    isSubmitted ? <Results correctAnswers={correctAnswers} numberOfQuestions={props.questions.length} /> : <div>{renderContent}<><Button variant="outlined" onClick={() => {
       submit();
     }}>Submit</Button></></div>
   )

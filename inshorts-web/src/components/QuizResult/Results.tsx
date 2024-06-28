@@ -1,17 +1,10 @@
-import React, { useMemo } from 'react'
-import { Typography, Card, CardContent, CardActions, Button } from '@mui/material'
-import questions from '../../data/questions';
+import { Typography, Card, CardContent } from '@mui/material'
 
-
-export default function Result(props: any) {
-    const { answers } = props;
-
-    const correctAnswers = useMemo(() => {
-        return questions.filter((q, i) => {
-            return q.correctAnswer === parseInt(answers[i]);
-        }).length;
-    }, [answers])
-
+interface ResultProp {
+    correctAnswers: number,
+    numberOfQuestions: number
+}
+export default function Result(props: ResultProp) {
     return (
         <Card variant='outlined' sx={{ pt: 0, pb: 0 }}>
             <CardContent style={{ paddingBottom: 0, paddingTop: 0 }}>
@@ -19,7 +12,7 @@ export default function Result(props: any) {
                     Result
                 </Typography>
                 <Typography sx={{ display: "flex", justifyContent: "center", mb: 1 }} variant="h4" color="text.secondary">
-                    {correctAnswers} / {questions.length}
+                    {props.correctAnswers} / {props.numberOfQuestions}
                 </Typography>
             </CardContent>
         </Card>

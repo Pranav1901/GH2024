@@ -1,10 +1,8 @@
-import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import "./App.css";
 import NavInshorts from "./components/NavInshorts";
 import NewsContent from "./components/NewsContent/NewsContent";
-import apikey from "./data/config";
 function App() {
   const [category, setCategory] = useState("General");
   const [newsArray, setNewsArray] = useState([]);
